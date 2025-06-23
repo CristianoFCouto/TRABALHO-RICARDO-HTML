@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="CSS/CSS_Samuel.css">
     <link rel="icon" href="imagens/pipoca.png" type="image/x-icon">
     <link rel="stylesheet"  href="CSS/trabalho.css">
+    <script src="JavaScript/imagem.js" defer> </script>
+    
 </head>
 <body>
     <div class="Containerflutua">
@@ -34,10 +36,12 @@
 
         <div class="barra"></div>
 
-        <div class="logotxt" >
-            <div class="logotxt">
-                <button id="botao" >Minha Conta</button>
-            </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------>
+    <div class="logotxt" id="botao" >
+         <button id="botaoConta" class="botaodesign">Minha Conta</button>
+    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------>
                 <div class="logotxt">
                     <img src="imagens\pipoca.png" alt="Logo" class="Logo">
                 </div>
@@ -201,5 +205,27 @@
 </div>
 <br>
 <br>
+  <!------------------------------------------------------------------------------------------------------------------------------------------>
+  <div id="janelaCadastro" class="janela">
+  <span class="fechar" id="fecharCadastro">&times;</span>
+  <div class="conteudojanela" style="flex-direction: column; align-items: flex-start;">
+    <h2>Cadastro</h2>
+    <form id="formCadastro">
+      <label for="cpf">CPF:</label><br>
+      <input type="text" id="cpf" name="cpf" required><br><br>
+
+      <label for="nome">Nome Completo:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="dataNasc">Data de Nascimento:</label><br>
+      <input type="date" id="dataNasc" name="dataNasc" required><br><br>
+
+      <label for="cartao">Número do Cartão:</label><br>
+      <input type="text" id="cartao" name="cartao" required><br><br>
+
+      <button type="submit" id="botao">Cadastrar</button>
+    </form>
+  </div>
+</div>
 </body>
 </html>
