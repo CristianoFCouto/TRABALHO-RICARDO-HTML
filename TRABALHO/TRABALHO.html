@@ -7,7 +7,9 @@
         <title>DIVULGANDO FILMES</title>
         <link rel="icon" href="imagens/pipoca.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="CSS\trabalho.css">
+        <script src="JavaScript/imagem.js" defer> </script>
 
+        
     </head>
     <body>
      
@@ -39,10 +41,10 @@
 <!------------------------------------------------------------------------------------------------------------------------------------------>
     <div class="barra"></div>
 <!------------------------------------------------------------------------------------------------------------------------------------------>
-    <div class="logotxt" >
-    <div class="logotxt">
-        <button id="botao" >Minha Conta</button>
+    <div class="logotxt" id="botao" >
+        <button id="botaoConta" class="botaodesign">Minha Conta</button>
     </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------>
         <div class="logotxt">
             <img src="imagens\pipoca.png" alt="Logo" class="Logo">
         </div>
@@ -69,51 +71,99 @@
 <!--Filmes-->
 
 <div class="alinhar">
-    <a href="filmes.html" >
+ <a href="filmes.html">
 <img src="imagens\destaque.png" alt="primeira Imagem" height="500" width="1000" >
-    </a>
-</div>
+ </a> 
+
+          
+</div>  
+ 
 <br>
 <br>
 <div class="linhasepara3"></div>
-<div class="Container">
-    <div class="filmes">  
-        <a href="filmes.html" >
-        <img class="efeitoimg" src="imagens\filme1.webp" alt="imagem2" width="200" height="300">
-        </a>
-       
-        
+ <div class="Container">
+  
+   <img
+     class="efeitoimg" src="imagens\filme1.webp"  alt="imagem2" width="200" height="300" 
+     data-trailer="https://www.youtube.com/embed/SzINZZ6iqxY" 
+     data-titulo="THE BEEKEEPER" 
+     data-sinopse="Em uma perigosa conspiração, Clay tem seu passado exposto para o mundo e, entre outros efeitos colaterais,
+      acaba perdendo uma pessoa muito querida. Tomado pela fúria, ele parte em uma busca frenética por vingança contra aqueles
+       que revelaram seu maior segredo. No entanto, em sua busca para colocar um ponto final no sistema criminoso responsável
+        por sua perda, suas ações acabam tomando proporções nacionais ao envolverem governos e as instituições mais influentes
+         do mundo, colocando-o na mira de diferentes organizações.">   
+
+    <img  src="imagens\filme2.jpg" class="efeitoimg"  alt="imagem3" width="200" height="300"
+     data-trailer="https://www.youtube.com/embed/VUi2OHA0_sw" 
+     data-titulo="INFILTRADO" 
+     data-sinopse="Em Infiltrado, um misterioso homem conhecido como Harry (Jason Statham) trabalha para uma empresa de 
+     carros-fortes e é responsável por transferir milhões de dólares em dinheiro todos os dias pela cidade de Los Angeles.
+      Um dia, quando tentam assaltar seu caminhão, o homem consegue se livrar do assalto utilizando habilidades impressionantes.
+       Seus companheiros passam questionar de onde ele veio e suas motivações para estar ali. Assim que o mistério envolvendo 
+       Harry se desenvolve, um plano maior é revelado.">
+
+    <img  src="imagens\filme3.jpg" class="efeitoimg"  alt="imagem 4" width="200" height="300"
+     data-trailer="https://www.youtube.com/embed/3IVPHxs4NoM" 
+     data-titulo="UM FILME MINECRAFT" 
+     data-sinopse="Um Filme Minecraft é a primeira adaptação live-action para os cinemas do jogo mais vendido de todos os
+     tempos, Minecraft. Neste universo onde a criatividade não só proporciona diversão como também é vital para a sobrevivência,
+     quatro indivíduos desajustados — Garrett arrett “The Garbage Man” Garrison (Jason Momoa), Henry (Sebastian Eugene Hansen),
+     Natalie (Emma Myers) e Dawn (Danielle Brooks) — são subitamente transportados para o Overworld, um mundo cúbico e bizarro
+     onde a imaginação reina. Após passarem por um portal misterioso, eles se encontram em uma terra repleta de perigos e criaturas 
+     malignas, como Piglins e Zumbis. Para retornarem ao seu mundo, eles terão que dominar este novo ambiente com a ajuda de um 
+     construtor experiente e imprevisível, Steve (Jack Black). 
+     Durante essa jornada mágica, os cinco aventureiros precisarão redescobrir suas habilidades únicas, essenciais não apenas para
+     sobreviver no Overworld, mas também para prosperar na vida real.">
+
+    <img  src="imagens\filme4.png" class="efeitoimg" alt="imagem5" width="200" height="300"
+     data-trailer="https://www.youtube.com/embed/4SP2X7KCulU" 
+     data-titulo="AINDA ESTOU AQUI" 
+     data-sinopse=" Ainda Estou Aqui é uma adaptação cinematográfica do livro autobiográfico de Marcelo Rubens Paiva, que narra 
+     a emocionante trajetória de sua mãe, Eunice Paiva, durante a ditadura militar no Brasil. Ambientada em 1970, a história 
+     retrata como a vida de uma mulher casada com um importante político muda drasticamente após o desaparecimento dele, capturado 
+     pelo regime militar. Forçada a abandonar a rotina de dona de casa, Eunice (Fernanda Torres/Fernanda Montenegro) se transforma
+     em uma ativista dos direitos humanos, lutando pela verdade sobre o paradeiro do marido e enfrentando as consequências brutais 
+     da repressão. O filme explora não apenas o drama pessoal de Eunice, mas também o impacto do regime militar na vida de milhares 
+     de famílias brasileiras, destacando o papel das mulheres na resistência. Com uma narrativa profunda e sensível, Ainda Estou Aqui 
+     traz à tona questões de perda, coragem e resiliência, enquanto revisita um dos períodos mais sombrios da história do Brasil.
+     A obra é um tributo à força de Eunice Paiva, que, contra todas as adversidades, se torna uma figura central na luta pelos direitos humanos no país.">
+
+    <img  src="imagens\filme5.webp" class="efeitoimg"  alt="imagem 6" width="200" height="300"
+     data-trailer="https://www.youtube.com/embed/ZO2ArP6jic0" 
+     data-titulo="TODO TEMPO QUE TEMOS" 
+     data-sinopse="Todo Tempo Que Temos acompanha o encontro surpresa de Almut (Florence Pugh), uma chefe de cozinha espirituosa e 
+     indomável, com Tobias (Andrew Garfield), um recém-divorciado que tenta colocar sua vida em ordem. Os dois logo provam que pessoas 
+     completamente opostas podem encontrar, em suas diferenças, um amor capaz de mudar suas vidas para sempre. No entanto, o que parecia 
+     um encontro perfeito, que se transformou em um lar e logo em uma família, é abalado por uma verdade escondida por anos, colocando em 
+     risco o amor e todas as conquistas do casal. À medida que a trama se desenrola, Almut e Tobias enfrentam desafios emocionais e precisam 
+     decidir se seu vínculo é forte o suficiente para superar as adversidades. Com uma narrativa profunda e cativante, o filme explora temas 
+     como redenção, perdão e a complexidade dos relacionamentos humanos">
+
+    <img  src="imagens\filme6.webp" class="efeitoimg" alt="imagem2" width="200" height="300"
+     data-trailer="https://www.youtube.com/embed/NmTPDA15lPA" 
+     data-titulo="PLANETA DOS MACACOS: O REINADO" 
+     data-sinopse="Planeta dos Macacos: O Reinado dá continuidade à saga dos primatas inteligentes, situando-se em um futuro distante após 
+     os eventos de Guerra pelo Planeta dos Macacos de 2017. Com muitas sociedades de macacos surgindo desde a liderança de Caesar (Kevin Durand), 
+     a divisão entre eles é evidente: alguns desconhecem completamente os feitos do líder, enquanto outros distorcem seus ensinamentos para 
+     construir impérios poderosos. Neste novo mundo, um líder macaco busca escravizar outros grupos para adquirir tecnologia humana, desencadeando 
+     uma luta pelo poder e sobrevivência. Enquanto isso, um jovem macaco testemunha da captura de seu clã e inicia uma jornada em busca da liberdade. 
+     No entanto, é uma jovem humana que se torna a chave para os destinos entrelaçados dessas diferentes facções. Planeta dos Macacos: O Reinado fala 
+     em questões de poder, liberdade e coexistência, enquanto os primatas evoluídos e os humanos lutam para encontrar seu lugar em um mundo 
+     pós-apocalíptico onde os segredos do passado podem determinar o futuro de todos.">
+    
+
+    <div id="janelaFlutua" class="janela">
+  <span class="fechar" id="fechar">&times;</span>
+  <div class="conteudojanela">
+    <div class="trailer_video">
+      <iframe width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div>
-        <a href="filmes.html" >
-        <img class="efeitoimg" src="imagens\filme2.jpg" alt="imagem3" width="200" height="300">
-       
-       
+    <div class="sinopse">
+      <h2></h2>
+      <p></p>
     </div>
-    <div class="filmes">
-        <a href="filmes.html" >
-        <img class="efeitoimg" src="imagens\filme3.jpg" alt="imagem 4" width="200" height="300">
-    </a>
-        
-    </div>
-    <div class="filmes">
-        <a href="filmes.html">
-        <img class="efeitoimg" src="imagens\filme4.png" alt="imagem5" width="200" height="300">
-    </a>
-      
-    </div>
-    <div class="filmes">
-        <a href="filmes.html" >
-        <img class="efeitoimg" src="imagens\filme5.webp" alt="imagem 6" width="200" height="300">
-    </a>
-       
-    </div>
-    <div class="filmes">  
-        <a href="filmes.html" >
-        <img class="efeitoimg" src="imagens\filme6.webp" alt="imagem2" width="200" height="300">
-    </a>
-      
-    </div>
+  </div>
+ </div>
 </div>
 <div class="linhasepara3"></div>
 
@@ -136,42 +186,49 @@
 <br>
 <div class="linhasepara3"></div>
 <div class="Container">
-   <div class="filmes">  
-    <a href="Series.html" >
-       <img class="efeitoimg" src="imagens\serie1.webp" alt="imagem2" width="200" height="300">
-    </a>
+    
+    <img class="efeitoimg" src="imagens\serie1.webp" alt="imagem2" width="200" height="300"
+    data-trailer="https://www.youtube.com/embed/chcPVeszoUo" 
+     data-titulo="INVENCÍVEL" 
+     data-sinopse="Invencível narra a história de Mark Grayson, um adolescente comum que, ao completar 17 anos, descobre 
+     que possui superpoderes, herdados de seu pai, Nolan Grayson, o poderoso super-herói conhecido como Omni-Man. À medida 
+     que Mark se torna o herói Invencível, ele embarca em uma jornada para aprender a usar seus poderes, descobrindo que 
+     a vida de super-herói é mais complexa e sombria do que ele imaginava.">
 
-   </div>
-   <div class="filmes">
-    <a href="Series.html" >
-       <img class="efeitoimg" src="imagens\serie2.jpg" alt="imagem3" width="200" height="300">
-    </a>
+    <img class="efeitoimg" src="imagens\serie2.jpg" alt="imagem3" width="200" height="300"
+     data-trailer="https://www.youtube.com/embed/Nqvx_gb0W5E" 
+     data-titulo="STRANGER THINGS" 
+     data-sinopse="Situada no início dos anos 1980, Stranger Things se passa na cidade rural fictícia de Hawkins, Indiana. 
+     Um menino desaparece e eventos sobrenaturais começam a acontecer, envolvendo uma misteriosa garota com poderes especiais.">
 
-   </div>
-   <div class="filmes">
-    <a href="Series.html" >
-       <img class="efeitoimg" src="imagens\serie3.webp" alt="imagem 4" width="200" height="300">
-    </a>
+    <img class="efeitoimg" src="imagens\serie3.webp" alt="imagem 4" width="200" height="300"
+     data-trailer="https://www.youtube.com/embed/BPeKW29kJT8" 
+     data-titulo="REACHER" 
+     data-sinopse="Reachernarra as aventuras de Jack Reacher, um ex-major da polícia militar do Exército dos EUA, que leva uma 
+     vida nômade, viajando pelos Estados Unidos e resolvendo casos.">
 
-   </div>
-   <div class="filmes">
-    <a href="Series.html" >
-       <img class="efeitoimg" src="imagens\serie4.webp" alt="imagem5" width="200" height="300">
-    </a>
+    <img class="efeitoimg" src="imagens\serie4.webp" alt="imagem5" width="200" height="300"
+     data-trailer="https://www.youtube.com/embed/0vB2lHQim3Q" 
+     data-titulo="THE LAST OF US" 
+     data-sinopse="The Last of Us é uma série distópica da HBO baseada na franquia de jogos de videogame de mesmo nome 
+     criada por Neil Druckmann. O drama narra um futuro pandêmico que foi devastador para humanidade, deixando os seres
+     humanos à beira da extinção.">
 
-   </div>
-   <div class="filmes">
-    <a href="Series.html" >
-       <img class="efeitoimg" src="imagens\serie5.jpg" alt="imagem 6" width="200" height="300">
-    </a>
+    <img class="efeitoimg" src="imagens\serie5.jpg" alt="imagem 6" width="200" height="300"
+     data-trailer="https://www.youtube.com/embed/gBmkI4jlaIo" 
+     data-titulo="THE BEAR" 
+     data-sinopse="The Bear  acompanha Carmen Carmy Berzatto, um jovem chef de alta gastronomia que retorna a 
+     Chicago para administrar a lanchonete de carne italiana de sua família, após o suicídio do irmão mais velho, Mikey.">
+  
+    <img class="efeitoimg" src="imagens\serie6.jpg" alt="imagem 6" width="200" height="300"
+     data-trailer="https://www.youtube.com/embed/UNjvJNlxs8Q" 
+     data-titulo="WANDINHA" 
+     data-sinopse="narra a vida da personagem Wandinha Addams como estudante da Academia Nunca Mais, um internato 
+     para alunos com habilidades paranormais. Wandinha tenta dominar suas habilidades psíquicas, investigar uma série 
+     de assassinatos na cidade e desvendar um mistério sobrenatural que envolve seus pais. Ao mesmo tempo, ela lida com 
+     os desafios de ser adolescente, fazer amigos e inimigos na escola, e explorar seus próprios sentimentos">
 
-   </div>
-   <div class="filmes">
-    <a href="Series.html" >
-       <img class="efeitoimg" src="imagens\serie6.jpg" alt="imagem 6" width="200" height="300">
-    </a>
 
-   </div>
 </div>
 <div class="linhasepara3"></div>
 <!------------------------------------------------------------------------------------------------------------------------------------------>
@@ -249,6 +306,27 @@
 </div>
    <div class="linhasepara3"></div>
   <!------------------------------------------------------------------------------------------------------------------------------------------>
+  <div id="janelaCadastro" class="janela">
+  <span class="fechar" id="fecharCadastro">&times;</span>
+  <div class="conteudojanela" style="flex-direction: column; align-items: flex-start;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+    <h2>Cadastro</h2>
+    <form id="formCadastro">
+      <label for="cpf">CPF:</label><br>
+      <input type="text" id="cpf" name="cpf" required><br><br>
 
+      <label for="nome">Nome Completo:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="dataNasc">Data de Nascimento:</label><br>
+      <input type="date" id="dataNasc" name="dataNasc" required><br><br>
+
+      <label for="cartao">Número do Cartão:</label><br>
+      <input type="text" id="cartao" name="cartao" required><br><br>
+
+      <button type="submit" id="botao">Cadastrar</button>
+    </form>
+  </div>
+</div>
     </body>
 </html>
+
